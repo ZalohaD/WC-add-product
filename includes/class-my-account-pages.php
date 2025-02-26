@@ -12,7 +12,7 @@ class My_Account_Pages {
 
     private function __construct() {
         add_filter('woocommerce_account_menu_items', [$this, 'add_my_account_menu_items']);
-        add_action('init', [$this, 'register_endpoints']); // Змінив ім'я методу тут
+        add_action('init', [$this, 'register_endpoints']);
         add_action('woocommerce_account_add-product_endpoint', [$this, 'add_product_page']);
         add_action('woocommerce_account_my-products_endpoint', [$this, 'my_products_page']);
     }
